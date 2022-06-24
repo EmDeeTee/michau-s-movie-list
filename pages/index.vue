@@ -9,6 +9,9 @@ export default {
         return {
             //noResults: true
         }
+    },
+    mounted() {
+        document.title = "Michau's Movie List"
     }
 }
 </script>
@@ -16,6 +19,8 @@ export default {
 <script setup lang="ts">
 import { dataToEsm } from "@rollup/pluginutils";
 import {ref} from "vue"
+import Vue from "vue";
+
 
 const searchText = ref("")
 const shows = ref([]) as any
